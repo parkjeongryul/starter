@@ -1,0 +1,34 @@
+### Create a new user
+
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+  "email": "asdfqf@naver.com",
+  "password": "aaaffwdqa"
+}
+
+
+### Find a particular user with a given id
+GET http://localhost:3000/auth/4
+
+### Find all users with a given email
+GET http://localhost:3000/auth?email=asdf@naver.com
+
+### Delete a user with a given id
+DELETE http://localhost:3000/auth/3
+
+### Update a user with a given id
+PATCH http://localhost:3000/auth/4
+Content-Type: application/json
+
+{
+  "email": "hellfo@naver.com",
+  "password": "myname"
+}
+
+### Set a colors
+GET http://localhost:3000/auth/colors/red
+
+### Get a colors
+GET http://localhost:3000/auth/colors
